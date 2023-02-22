@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*  */
+/*  */
+.caraousel-text-left{
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    left: 8%;
+}
+.caraousel-text-right{
+    position: absolute;
+    z-index: 99;
+    top: 30%;
+    right: 8%;
+}
+.caraousel-text-centre{
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%);
+}
+.caraousel-text-centre p{
+    text-align: center;
+    margin: 10px;
+    color: #000000;
+}
+
+.w{
+    color: #fff;
+}
+
+.b{
+    color: #000;
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 45px;
+    z-index: 999;
+}
+
+p{
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.a:hover{
+    text-decoration: underline;
+}
+.btn{
+    font-size: 17px;
+    padding: 10px 20px;
+    border-radius: 25px;  
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+.btn:hover{
+    background-color: #494949;
+    transform: scale(1.1);
+    transition: 0.5 ease;
+}
+
+
+
+
+
+main{
+    width: 100%;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.main-nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav1 ul li,
+.nav2 ul li,
+.nav3 ul li
+{
+    list-style: none;
+}
+.nav1 ul li a,
+.nav2 ul li a,
+.nav3 ul li a
+{
+    text-decoration: none;
+}
+.nav1 ul li:hover,
+.nav2 ul li:hover,
+.nav3 ul li:hover
+{
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+/* NAV1 AND NAV3*/
+
+.nav1,
+.nav3
+{
+    height: 100%;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav3 ul{
+    display: flex;
+}
+.nav3 ul li a{
+    padding: 10px;
+    font-size: 25px;
+    color: #000;
+}
+
+
+/* NAV2 */
+
+.nav2{
+    height: 100%;
+    width: 74%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav2 ul{
+    display: flex;
+}
+.nav2 ul li a{
+    padding: 0 7px;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+}
+
+main{
+    width: 95%;
+    margin: 0 2.5%;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.sub-container{
+    height: 100%;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    position: relative;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next
+{
+    color: #fff;
+}
+.swiper .swiper-pagination-bullet-active{
+    background: #ae6f6f;
+}
+
+
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin: 25px;
+}
+
+section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    margin: 50px 0;
+}
+.second{
+    background-color: aqua;
+}
+.sub-first{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* overflow: hidden; */
+
+}
+.sub-first-one{
+    width: 49.5%;
+    height: 100%;
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/color_684x684-copy-2.jpg?$684_684_JPG$);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+
+
+
+.sub-first-two{
+    width: 49.5%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+
+.sub-first-two-box{
+    width: 49%;
+    height: 49%;
+    background-color: #ae6f6f;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-first-two-box .images{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.images:hover{
+    transition: 0.7s;
+    transform: scale(1.1);
+} 
+
+.image1{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Inverter-AC-AR18AY5YBTZ-330x330.jpg?$330_330_JPG$);
+    background-position: center;
+    background-size: cover;
+}
+.image2{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/2-S23_APP-Tile_330x330.jpg?$330_330_JPG$);
+    background-position: center;
+    background-size: cover;
+}
+.image3{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/Galaxy-Buds2-Pro_APP-Tile_330x33011.jpg?$330_330_JPG$);
+    background-position: center;
+    background-size: cover;
+}
+.image4{
+    background-image: url(https://images.samsung.com/is/image/samsung/assets/in/home/SBS_330x330.jpg?$330_330_JPG$);
+    background-position: center;
+    background-size: cover;
+}
+
+.sub-first-two .sub-first-two-box h3{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 20%;
+    z-index: 999;
+    font-weight: 600;
+}
+
+.sub-first-two .sub-first-two-box p{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 10%;
+    z-index: 999;
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+    margin: 15px 0;
+}
+
+.sub-first-two .sub-first-two-box button{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    bottom: 0%;
+    z-index: 999;
+    font-weight: 600;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+
+h3>sup{
+    font-size: 10px;
+}
+
+.tabs{
+    list-style: none;
+    top: 100px;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tabs li{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #263238;
+    cursor: pointer;
+    position: relative;
+    padding: 0 15px;
+}
+
+.tabs li::after{
+    content: '';
+    position: absolute;
+    bottom: -16%;
+    left: 15px;
+    width: 0%;
+    height: 4px;
+    background: #343637;
+    border-radius: 20px;
+    transition: width 0.7s ease;
+}
+
+.tabs li.active::after{
+    width: 85%;
+}
+
+.containerr{
+    position: relative;
+}
+.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100%;
+    width: 100%;
+}
+
+.content.active{
+    display: block;
+}
+
+.content img{
+    width: 100%;
+    height: 100%;
+}
+.content p{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px;
+    color: #000000;
+}
+
+/* section{
+    background-color: rgb(170, 179, 187);
+} */
+
+
+footer .footer-top pre{
+    font-size: 12px;
+    font-family: 'gilroy';
+    /* border-bottom: 0.5px solid #a5a5a5; */
+    /* margin-bottom: 500px; */
+}
+.footer-mid{
+    height: 90%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+    border-bottom: 0.5px solid #a5a5a5;
+    border-top: 0.5px solid #a5a5a5;
+    display: flex;
+}
+footer .footer-mid .mids{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.bd{
+    border-right: 1px solid #a5a5a5;
+}
+footer .footer-mid .mids h3{
+    margin-bottom: 20px;
+}
+footer .footer-mid .mids a{
+    margin:5px 0;
+    color: #3b3b3b;
+    text-decoration: none;
+    font-size: 16px;
+}
+footer .footer-mid .mids a:hover{
+    color: #1428A9;
+    text-decoration: underline;
+}
+.margin{
+    margin-top: 15px;
+}
+.foot-para p{
+    font-size: 14px;
+    font-family: 'gilroy';
+    padding: 15px;
+}
+.foot-by{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot-by h4{
+    font-weight: 500;
+}
